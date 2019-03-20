@@ -11,3 +11,13 @@ class Room():
         self.e_to = none
         self.w_to = none
     def get_room_in_direction(self, direction):
+      if direction == "n":
+          return self.n_to
+      if direction == "s":
+          return self.s_to
+      if direction == "e":
+          return self.e_to
+      if direction == "w":
+          return self.w_to
+      else:
+          return None
